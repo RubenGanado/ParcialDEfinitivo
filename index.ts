@@ -1,9 +1,8 @@
 
 
-const mivariable: string = "hola que hola que tal";
+import axios from "axios";
 
+axios.get("https://rickandmortyapi.com/api/character/1").then((response) => {
+    console.log(response.data);
 
-const mi_numero:number = 55;
-
-console.log(mi_numero);
-console.log(mivariable);
+});
